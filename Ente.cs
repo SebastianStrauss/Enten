@@ -32,5 +32,9 @@ namespace Enten
         {
             return _name;
         }
+        public string Flieg()
+        {
+            return String.Format("Die {0} fliegt durch die Gegend.", _name);
+        }
     }
 }

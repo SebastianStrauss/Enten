@@ -30,10 +30,13 @@ namespace Enten
 
         private static void PrintMessage(Ente oEnte)
         {
-            if (oRND.Next(0, 2) == 0)
+            int iEntenaktivität = oRND.Next(0, 3);
+            if (iEntenaktivität == 0)
                 Console.WriteLine(oEnte.Quack());
-            else
+            else if (iEntenaktivität == 1)
                 Console.WriteLine(oEnte.Schwimm());
+            else
+                Console.WriteLine(oEnte.Flieg());
         }
     }
 }
