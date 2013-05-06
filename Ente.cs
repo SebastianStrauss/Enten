@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Enten
 {
-    class Ente
+    abstract class Ente
     {
         public virtual string Quack()
         {
