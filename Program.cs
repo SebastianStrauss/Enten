@@ -15,6 +15,8 @@ namespace Enten
             oEntenschwarm.Add(new Krickente());
             oEntenschwarm.Add(new Stockente());
             oEntenschwarm.Add(new Schnatterente());
+            oEntenschwarm.Add(new Flugente());
+            oEntenschwarm.Add(new Pfeifente());
 
             Console.WriteLine("Es wurden Folgende Enten geladen:");
             foreach (Ente oEnte in oEntenschwarm)

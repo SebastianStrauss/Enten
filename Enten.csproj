@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ente.cs" />
+    <Compile Include="Flugente.cs" />
     <Compile Include="Krickente.cs" />
+    <Compile Include="Pfeifente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Schnatterente.cs" />
