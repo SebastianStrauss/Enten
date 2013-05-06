@@ -15,5 +15,9 @@ namespace Enten
         {
             return ("Quuuäck");
         }
+        public override string ToString()
+        {
+            return "Schnatterente";
+        }
     }
 }

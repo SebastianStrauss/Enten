@@ -11,6 +11,9 @@ namespace Enten
         {
             return ("Quuuack");
         }
-
+        public override string ToString()
+        {
+            return "Stockente";
+        }
     }
 }

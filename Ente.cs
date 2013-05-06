@@ -16,5 +16,6 @@ namespace Enten
             Random rnd = new Random();
             return (String.Format("Die Ente Schwimmt {0} Meter", rnd.Next(1, 10)));
         }
+        
     }
 }

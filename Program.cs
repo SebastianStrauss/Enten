@@ -17,14 +17,12 @@ namespace Enten
 
             Console.WriteLine("Es wurden Folgende Enten geladen:");
             foreach (Ente oEnte in oEntenschwarm)
-               Console.WriteLine(oEnte.GetType());        
+                Console.WriteLine(oEnte);        
 
             do
             {
                 int iEntennummer = oRND.Next(0, oEntenschwarm.Count());
-                string Entenname = oEntenschwarm[iEntennummer].GetType().ToString();
-                Entenname = Entenname.Substring(Entenname.IndexOf('.') + 1);
-                Console.Write(Entenname);
+                Console.Write(oEntenschwarm[iEntennummer]);
                 Console.Write(": ");
                 if(oRND.Next(0,2) == 0)
                     Console.WriteLine(oEntenschwarm[iEntennummer].Quacken());
