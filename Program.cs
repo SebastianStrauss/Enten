@@ -7,10 +7,11 @@ namespace Enten
 {
     class Program
     {
+        private static List<Ente> oEntenschwarm = new List<Ente>();
+        private static Random oRND = new Random();
+
         static void Main(string[] args)
         {
-            List<Ente> oEntenschwarm = new List<Ente>();
-            Random oRND = new Random();
             oEntenschwarm.Add(new Krickente());
             oEntenschwarm.Add(new Stockente());
             oEntenschwarm.Add(new Schnatterente());
@@ -22,14 +23,19 @@ namespace Enten
             do
             {
                 int iEntennummer = oRND.Next(0, oEntenschwarm.Count());
-                Console.Write(oEntenschwarm[iEntennummer]);
-                Console.Write(": ");
-                if(oRND.Next(0,2) == 0)
-                    Console.WriteLine(oEntenschwarm[iEntennummer].Quacken());
-                else
-                    Console.WriteLine(oEntenschwarm[iEntennummer].Schwimmen());
+                PrintMessage(oEntenschwarm[iEntennummer]);
                 System.Threading.Thread.Sleep(1000);   
             } while (true);
+        }
+
+        private static void PrintMessage(Ente oEnte)
+        {
+            Console.Write(oEnte);
+            Console.Write(": ");
+            if (oRND.Next(0, 2) == 0)
+                Console.WriteLine(oEnte.Quack());
+            else
+                Console.WriteLine(oEnte.Schwimm());
         }
     }
 }

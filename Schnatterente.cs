@@ -7,11 +7,11 @@ namespace Enten
 {
     class Schnatterente : Ente
     {
-        public string Schnattern()
+        public string Schnatter()
         {
             return ("Schnatter");
         }
-        public override string Quacken()
+        public override string Quack()
         {
             return ("Quuuäck");
         }

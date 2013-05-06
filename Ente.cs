@@ -7,15 +7,14 @@ namespace Enten
 {
     class Ente
     {
-        public virtual string Quacken()
+        public virtual string Quack()
         {
             return ("Quack!");
         }
-        public string Schwimmen()
+        public string Schwimm()
         {
             Random rnd = new Random();
             return (String.Format("Die Ente Schwimmt {0} Meter", rnd.Next(1, 10)));
         }
-        
     }
 }

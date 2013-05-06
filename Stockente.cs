@@ -7,7 +7,7 @@ namespace Enten
 {
     class Stockente : Ente
     {
-        public override string Quacken()
+        public override string Quack()
         {
             return ("Quuuack");
         }
