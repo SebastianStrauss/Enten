@@ -7,13 +7,9 @@ namespace Enten
 {
     class Schnatterente : Ente
     {
-        public override string Quack()
+        public Schnatterente()
+            : base("Schnatterente", "Schnatter")
         {
-            return ("Schnatter");
-        }
-        public override string ToString()
-        {
-            return "Schnatterente";
         }
     }
 }

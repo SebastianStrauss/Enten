@@ -30,8 +30,6 @@ namespace Enten
 
         private static void PrintMessage(Ente oEnte)
         {
-            Console.Write(oEnte);
-            Console.Write(": ");
             if (oRND.Next(0, 2) == 0)
                 Console.WriteLine(oEnte.Quack());
             else

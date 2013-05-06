@@ -7,9 +7,9 @@ namespace Enten
 {
     class Krickente : Ente
     {
-        public override string ToString()
+        public Krickente()
+            : base("Krickente", "Quack")
         {
-            return "Krickente";
         }
     }
 }
