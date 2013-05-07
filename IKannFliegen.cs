@@ -5,10 +5,8 @@ using System.Text;
 
 namespace Enten
 {
-    class Stockente : Ente
+    interface IKannFliegen
     {
-        public Stockente() : base("Stockente", "Quuuack")
-        {
-        }
+        string Flieg();
     }
 }

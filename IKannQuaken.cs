@@ -5,11 +5,8 @@ using System.Text;
 
 namespace Enten
 {
-    class Flugente : Ente
+    interface IKannQuaken
     {
-        public Flugente()
-            : base("Flugente", "Quuaack")
-        {
-        }
+        string Quak();
     }
 }

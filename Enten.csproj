@@ -44,13 +44,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ente.cs" />
-    <Compile Include="Flugente.cs" />
-    <Compile Include="Krickente.cs" />
-    <Compile Include="Pfeifente.cs" />
+    <Compile Include="EntenManager.cs" />
+    <Compile Include="Entensimulator.cs" />
+    <Compile Include="Enten\Flugente.cs" />
+    <Compile Include="IKannFliegen.cs" />
+    <Compile Include="IKannQuaken.cs" />
+    <Compile Include="IKannSchwimmen.cs" />
+    <Compile Include="Enten\Krickente.cs" />
+    <Compile Include="Enten\Pfeifente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Schnatterente.cs" />
-    <Compile Include="Stockente.cs" />
+    <Compile Include="Enten\Schnatterente.cs" />
+    <Compile Include="Enten\Stockente.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

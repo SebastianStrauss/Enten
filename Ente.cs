@@ -23,16 +23,16 @@ namespace Enten
         {
             return (String.Format("Die {0} macht {1}" , _name, _laut));
         }
-        public string Schwimm()
+        public virtual string Schwimm()
         {
             return String.Format("Die {0} schwimmt hin und her.", _name);
         }
 
-        public override string ToString()
+        public  override string ToString()
         {
             return _name;
         }
-        public string Flieg()
+        public virtual string Flieg()
         {
             return String.Format("Die {0} fliegt durch die Gegend.", _name);
         }

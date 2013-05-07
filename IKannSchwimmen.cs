@@ -5,11 +5,8 @@ using System.Text;
 
 namespace Enten
 {
-    class Krickente : Ente
+    interface IKannSchwimmen
     {
-        public Krickente()
-            : base("Krickente", "Quack")
-        {
-        }
+        string Schwimm();
     }
 }
