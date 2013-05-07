@@ -45,8 +45,10 @@
   <ItemGroup>
     <Compile Include="Ente.cs" />
     <Compile Include="EntenManager.cs" />
+    <Compile Include="Enten\EntenPfeife.cs" />
     <Compile Include="Entensimulator.cs" />
     <Compile Include="Enten\Flugente.cs" />
+    <Compile Include="Enten\Quietscheente.cs" />
     <Compile Include="IKannFliegen.cs" />
     <Compile Include="IKannQuaken.cs" />
     <Compile Include="IKannSchwimmen.cs" />

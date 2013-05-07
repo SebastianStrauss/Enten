@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Enten;
 
 namespace Enten
 {
@@ -18,6 +19,8 @@ namespace Enten
             manager.Registriere(new Schnatterente());
             manager.Registriere(new Flugente());
             manager.Registriere(new Pfeifente());
+            manager.Registriere(new Quietscheente());
+            manager.Registriere(new EntenPfeife());
 
             EntenSimulator sim = EntenSimulator.GetInstance(manager);
             sim.Start();
